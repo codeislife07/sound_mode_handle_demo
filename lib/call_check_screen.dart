@@ -76,13 +76,25 @@ class _CallCheckScreenState extends State<CallCheckScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      color: Theme.of(context).primaryColor,
       child: SafeArea(
         child: Scaffold(
+          backgroundColor: Theme.of(context).primaryColor,
           body: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [Text(status.toString())],
+              children: [
+                SizedBox(
+                  height: 20,
+                ),
+                Image.asset("assets/gif/error.gif"),
+                Text(
+                  "Alert!!",
+                  style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+                        color: Colors.white,
+                      ),
+                ),
+              ],
             ),
           ),
         ),

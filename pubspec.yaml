@@ -37,7 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   sound_mode: 
     path: 'package/sound_mode'
-  just_audio: ^0.9.41
+  just_audio: 
   vibration: 
 
 dev_dependencies:
@@ -65,6 +65,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/music/
+    - assets/gif/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
